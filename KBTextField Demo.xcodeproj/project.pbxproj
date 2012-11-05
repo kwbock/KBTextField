@@ -13,6 +13,8 @@
 		27598C5C16480586003F098A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 27598C5A16480586003F098A /* Credits.rtf */; };
 		27598C5F16480586003F098A /* KBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27598C5E16480586003F098A /* KBAppDelegate.m */; };
 		27598C6216480586003F098A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27598C6016480586003F098A /* MainMenu.xib */; };
+		27598C70164805B7003F098A /* KBTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 27598C6F164805B7003F098A /* KBTextField.m */; };
+		27598C7316481077003F098A /* KBTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27598C7216481077003F098A /* KBTextFieldCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		27598C5D16480586003F098A /* KBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KBAppDelegate.h; sourceTree = "<group>"; };
 		27598C5E16480586003F098A /* KBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KBAppDelegate.m; sourceTree = "<group>"; };
 		27598C6116480586003F098A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		27598C6E164805B7003F098A /* KBTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBTextField.h; sourceTree = "<group>"; };
+		27598C6F164805B7003F098A /* KBTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBTextField.m; sourceTree = "<group>"; };
+		27598C7116481077003F098A /* KBTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBTextFieldCell.h; sourceTree = "<group>"; };
+		27598C7216481077003F098A /* KBTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBTextFieldCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +52,7 @@
 		27598C3C16480586003F098A = {
 			isa = PBXGroup;
 			children = (
+				27598C6C164805A9003F098A /* KBtextField */,
 				27598C5116480586003F098A /* KBTextField Demo */,
 				27598C4A16480586003F098A /* Frameworks */,
 				27598C4816480586003F098A /* Products */,
@@ -100,6 +107,17 @@
 				27598C5A16480586003F098A /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27598C6C164805A9003F098A /* KBtextField */ = {
+			isa = PBXGroup;
+			children = (
+				27598C6E164805B7003F098A /* KBTextField.h */,
+				27598C6F164805B7003F098A /* KBTextField.m */,
+				27598C7116481077003F098A /* KBTextFieldCell.h */,
+				27598C7216481077003F098A /* KBTextFieldCell.m */,
+			);
+			path = KBtextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +187,8 @@
 			files = (
 				27598C5816480586003F098A /* main.m in Sources */,
 				27598C5F16480586003F098A /* KBAppDelegate.m in Sources */,
+				27598C70164805B7003F098A /* KBTextField.m in Sources */,
+				27598C7316481077003F098A /* KBTextFieldCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +318,7 @@
 				27598C6716480586003F098A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
