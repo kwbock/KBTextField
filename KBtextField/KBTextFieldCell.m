@@ -25,7 +25,6 @@
 }
 
 - (void)drawWithFrame:(NSRect)frame inView:(NSView *)controlView {
-    //NSLog(@"drawWithFrame");
     [NSGraphicsContext saveGraphicsState];
     NSBezierPath *path = [NSBezierPath bezierPathWithRoundedRect:frame xRadius:7.0f yRadius:7.0f];
 
@@ -41,22 +40,16 @@
 }
 
 
-
-
 - (void)selectWithFrame:(NSRect)aRect inView:(NSView *)controlView editor:(NSText *)textObj delegate:(id)anObject start:(NSInteger)selStart length:(NSInteger)selLength
 {
 	aRect = [self titleRectForBounds:aRect];
-	mIsEditingOrSelecting = YES;
 	[super selectWithFrame:aRect inView:controlView editor:textObj delegate:anObject start:selStart length:selLength];
-	mIsEditingOrSelecting = NO;
 }
 
 - (void)editWithFrame:(NSRect)aRect inView:(NSView *)controlView editor:(NSText *)textObj delegate:(id)anObject event:(NSEvent *)theEvent
 {
 	aRect = [self titleRectForBounds:aRect];
-	mIsEditingOrSelecting = YES;
 	[super editWithFrame:aRect inView:controlView editor:textObj delegate:anObject event:theEvent];
-	mIsEditingOrSelecting = NO;
 }
 
 @end

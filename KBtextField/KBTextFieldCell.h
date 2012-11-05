@@ -9,6 +9,5 @@
 #import <Cocoa/Cocoa.h>
 
 @interface KBTextFieldCell : NSTextFieldCell {
-    bool mIsEditingOrSelecting;
 }
 @end
